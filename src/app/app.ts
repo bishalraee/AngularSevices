@@ -4,16 +4,16 @@ import { OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Master } from './services/master';
 import { inject } from '@angular/core';
-import { HttpClientModule} 
+//import { HttpClientModule} from '@angular/common/http';
+//this import wasnt possible here hence we did it in main.ts in a different way
 
-//go through grok and see it once here the problem is with not able to import HttpClientModule
 
 @Component({
   selector: 'app-root',
   imports: [CommonModule],
   templateUrl: './app.html',
-    standalone: true,
-    styleUrl: './app.scss',
+  standalone: true,
+  styleUrl: './app.scss',
 })
 export class App implements OnInit {
   posts: any[] = [];
