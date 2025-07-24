@@ -1,8 +1,26 @@
-<h1>Standalone Component-posts</h1>
-  <ul>
-    <li *ngFor="let post of posts">
-      <strong>{{post.id}} - {{post.title}}</strong><br>
-      {{post.body}}
-    </li>
-  </ul>
+<h1>API Call</h1>
+
+<!--
+<ul>
+  <li *ngFor="let post of posts">
+    <strong>{{post.id}}</strong><br>
+    {{post.body}}
+  </li>
+</ul>
+-->
+
+<table border="1" [cellSpacing]="0" [cellPadding]="5">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{post.id}}</td>
+      <td>{{post.body}}</td>
+    </tr>
+  </tbody>
+</table>
   
